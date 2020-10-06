@@ -1,0 +1,227 @@
+---
+openapi: 3.0.3
+info:
+  title: "Static OpenAPI document"
+  description: "Some resources Open API documentation"
+  version: "1.0.1"
+paths:
+  /book:
+    get:
+      operationId: getBooks
+      responses:
+        "200":
+          description: OK
+    post:
+      operationId: addBook
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        "200":
+          description: OK
+  /book/{id}:
+    put:
+      operationId: updateBook
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int32
+          type: integer
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Book'
+    delete:
+      operationId: deleteBook
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Book'
+  /crypto:
+    get:
+      operationId: getCrypto
+      parameters:
+      - name: id
+        in: query
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CollectionCurrency'
+    post:
+      operationId: echoFile
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /crypto/test:
+    post:
+      operationId: callEcho
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /fruits:
+    get:
+      operationId: list
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SetFruit'
+    post:
+      operationId: add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Fruit'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SetFruit'
+    delete:
+      operationId: delete
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Fruit'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SetFruit'
+  /hello:
+    get:
+      operationId: hello
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /hello/{name}:
+    get:
+      operationId: hello
+      parameters:
+      - name: name
+        in: query
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /legumes:
+    get:
+      operationId: list
+      responses:
+        "200":
+          description: OK
+  /stocks/{symbol}/latestPrice:
+    get:
+      operationId: stock
+      parameters:
+      - name: symbol
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+components:
+  schemas:
+    Fruit:
+      type: object
+      properties:
+        description:
+          type: string
+        name:
+          type: string
+    SetFruit:
+      uniqueItems: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Fruit'
+    Book:
+      type: object
+      properties:
+        author:
+          pattern: \S
+          type: string
+          nullable: false
+        name:
+          pattern: \S
+          type: string
+          nullable: false
+        pages:
+          format: int32
+          minimum: 1
+          type: integer
+    Currency:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        price_btc:
+          type: string
+        price_usd:
+          type: string
+        symbol:
+          type: string
+    CollectionCurrency:
+      type: array
+      items:
+        $ref: '#/components/schemas/Currency'

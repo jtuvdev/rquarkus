@@ -29,7 +29,7 @@ github:
 vscode:
   extensions:
     - vscjava.vscode-maven@0.18.1:Ga0twwGQDu7XhFR1f838vg==
-tasks:
+    - vscjava.vscode-java-test@0.24.2:K9XH858+UGOKjfN3qRW15Q==tasks:
   - init: ./mvnw install -DskipTests=false
   - init: echo 'init script' # runs during prebuild
   - init: ./mvnw package -DskipTests

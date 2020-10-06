@@ -906,3 +906,510 @@ Caused by: java.lang.IllegalArgumentException: Unable to determine the proper ba
 2020-10-06 08:44:10,491 ws-6af7638e-6076-4e02-865c-b90b3ce34cda rquarkusweb-dev.jar[74587] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
 2020-10-06 08:44:44,234 ws-6af7638e-6076-4e02-865c-b90b3ce34cda rquarkusweb-dev.jar[74587] INFO  [yah.quo.que.QuotesRequest] (executor-thread-1) Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=BTC
 2020-10-06 08:44:57,325 ws-6af7638e-6076-4e02-865c-b90b3ce34cda rquarkusweb-dev.jar[74587] INFO  [yah.quo.que.QuotesRequest] (executor-thread-1) Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=BTC-EUR
+2020-10-06 11:36:14,646 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] WARN  [io.qua.agr.dep.AgroalProcessor] (build-64) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 11:36:16,318 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.qua.arc.pro.BeanProcessor] (build-57) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService
+2020-10-06 11:36:17,741 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 11:36:17,745 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 11:36:17,746 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 11:36:17,747 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 11:36:17,752 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 11:36:17,753 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 11:36:17,771 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 11:36:17,874 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 4.102s. Listening on: http://0.0.0.0:8080
+2020-10-06 11:36:17,875 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 11:36:17,876 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 11:37:01,563 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 11:37:01,568 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 11:37:01,574 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[10199] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.016s
+2020-10-06 11:37:14,288 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] WARN  [io.qua.agr.dep.AgroalProcessor] (build-40) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 11:37:15,807 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.qua.arc.pro.BeanProcessor] (build-31) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService
+2020-10-06 11:37:17,491 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 11:37:17,494 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 11:37:17,495 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 11:37:17,495 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 11:37:17,499 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 11:37:17,500 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 11:37:17,502 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 11:37:17,610 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 4.299s. Listening on: http://0.0.0.0:8080
+2020-10-06 11:37:17,611 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 11:37:17,612 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 11:38:21,457 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [Lifecycle] (Shutdown thread) onStop executed
+2020-10-06 11:38:21,466 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.sma.rea.mes.provider] (Shutdown thread) SRMSG00207: Cancel subscriptions
+2020-10-06 11:38:21,471 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[11461] INFO  [io.quarkus] (Shutdown thread) rquarkusweb stopped in 0.016s
+2020-10-06 11:38:34,744 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-42) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 11:38:36,359 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-8) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService
+2020-10-06 11:38:37,811 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 11:38:37,815 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 11:38:37,816 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 11:38:37,817 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 11:38:37,820 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 11:38:37,821 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 11:38:37,824 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 11:38:37,927 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 4.075s. Listening on: http://0.0.0.0:8080
+2020-10-06 11:38:37,929 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 11:38:37,929 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:38:25,812 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-11) Changed source files detected, recompiling [/workspace/rquarkus/src/main/java/org/QuarkusApplication.java]
+2020-10-06 12:47:16,728 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-12) Changed source files detected, recompiling [/workspace/rquarkus/src/main/java/org/QuarkusApplication.java]
+2020-10-06 12:47:16,875 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-12) File change detected: /workspace/rquarkus/src/main/resources/application.properties
+2020-10-06 12:47:16,879 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 12:47:16,998 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 12:47:17,004 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.126s
+2020-10-06 12:47:17,174 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-11) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 12:47:17,618 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-10) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.greeting.GreetingService#greetingConfig
+2020-10-06 12:47:17,869 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:47:17,870 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:47:17,870 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:47:17,870 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:47:17,870 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:47:17,870 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-06 12:47:17,870 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:47:17,940 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 12:47:17,941 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:47:17,942 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:47:17,943 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 12:47:17,944 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 12:47:17,945 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 12:47:17,946 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 12:47:17,947 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.933s. Listening on: http://0.0.0.0:8080
+2020-10-06 12:47:17,948 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 12:47:17,949 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:47:17,949 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-12) Hot replace total time: 1.223s 
+2020-10-06 12:49:00,929 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) File change detected: /workspace/rquarkus/src/main/resources/application.properties
+2020-10-06 12:49:00,933 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 12:49:00,935 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 12:49:00,937 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.005s
+2020-10-06 12:49:01,055 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-1) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 12:49:01,479 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-1) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService
+2020-10-06 12:49:01,751 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:01,751 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:01,751 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:01,751 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:01,751 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:01,751 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:01,751 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:01,807 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 12:49:01,808 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:49:01,809 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:49:01,809 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 12:49:01,811 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 12:49:01,811 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 12:49:01,811 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 12:49:01,813 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.871s. Listening on: http://0.0.0.0:8080
+2020-10-06 12:49:01,813 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 12:49:01,813 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:49:01,814 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Hot replace total time: 0.887s 
+2020-10-06 12:49:17,004 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) File change detected: /workspace/rquarkus/src/main/resources/application.properties
+2020-10-06 12:49:17,006 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 12:49:17,007 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 12:49:17,009 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.003s
+2020-10-06 12:49:17,115 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-18) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 12:49:17,452 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (vert.x-eventloop-thread-1) HTTP Request to /openapi failed, error id: 5a5367e0-6cbb-4183-8996-0a9a3aac137a-1: java.lang.IllegalArgumentException
+	at io.quarkus.arc.impl.ArcContainerImpl.unwrap(ArcContainerImpl.java:696)
+	at io.quarkus.arc.impl.ArcContainerImpl.instance(ArcContainerImpl.java:718)
+	at io.quarkus.arc.impl.InstanceImpl.resolve(InstanceImpl.java:222)
+	at io.quarkus.arc.impl.InstanceImpl.<init>(InstanceImpl.java:77)
+	at io.quarkus.arc.impl.InstanceImpl.<init>(InstanceImpl.java:59)
+	at io.quarkus.arc.impl.InstanceProvider.get(InstanceProvider.java:39)
+	at io.quarkus.arc.impl.InstanceProvider.get(InstanceProvider.java:16)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_Bean.create(HttpAuthenticator_Bean.zig:373)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_Bean.create(HttpAuthenticator_Bean.zig:461)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:96)
+	at io.quarkus.arc.impl.AbstractSharedContext.access$000(AbstractSharedContext.java:14)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:29)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:26)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:26)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_ClientProxy.arc$delegate(HttpAuthenticator_ClientProxy.zig:92)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_ClientProxy.attemptAuthentication(HttpAuthenticator_ClientProxy.zig:182)
+	at io.quarkus.vertx.http.runtime.security.HttpSecurityRecorder$2.handle(HttpSecurityRecorder.java:97)
+	at io.quarkus.vertx.http.runtime.security.HttpSecurityRecorder$2.handle(HttpSecurityRecorder.java:49)
+	at io.vertx.ext.web.impl.RouteState.handleContext(RouteState.java:1034)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:131)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:133)
+	at io.quarkus.vertx.http.runtime.devmode.VertxHttpHotReplacementSetup.handleHotReplacementRequest(VertxHttpHotReplacementSetup.java:46)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$5.handle(VertxHttpRecorder.java:317)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$5.handle(VertxHttpRecorder.java:313)
+	at io.vertx.ext.web.impl.RouteState.handleContext(RouteState.java:1034)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:131)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:133)
+	at io.vertx.ext.web.impl.RouterImpl.handle(RouterImpl.java:54)
+	at io.vertx.ext.web.impl.RouterImpl.handle(RouterImpl.java:36)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$9.handle(VertxHttpRecorder.java:393)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$9.handle(VertxHttpRecorder.java:390)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$1.handle(VertxHttpRecorder.java:134)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$1.handle(VertxHttpRecorder.java:123)
+	at io.vertx.core.http.impl.WebSocketRequestHandler.handle(WebSocketRequestHandler.java:50)
+	at io.vertx.core.http.impl.WebSocketRequestHandler.handle(WebSocketRequestHandler.java:32)
+	at io.vertx.core.http.impl.Http1xServerConnection.handleMessage(Http1xServerConnection.java:136)
+	at io.vertx.core.impl.ContextImpl.executeTask(ContextImpl.java:366)
+	at io.vertx.core.impl.EventLoopContext.execute(EventLoopContext.java:43)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:229)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:173)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.channelRead(WebSocketServerExtensionHandler.java:101)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.vertx.core.http.impl.Http1xUpgradeToH2CHandler.channelRead(Http1xUpgradeToH2CHandler.java:109)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.vertx.core.http.impl.Http1xOrH2CHandler.end(Http1xOrH2CHandler.java:61)
+	at io.vertx.core.http.impl.Http1xOrH2CHandler.channelRead(Http1xOrH2CHandler.java:38)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-10-06 12:49:17,476 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-3) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService
+2020-10-06 12:49:17,660 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:17,660 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:17,660 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:17,660 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:17,660 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:17,660 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:17,660 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:17,713 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 12:49:17,714 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:49:17,714 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:49:17,715 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 12:49:17,716 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 12:49:17,716 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 12:49:17,717 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 12:49:17,718 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.705s. Listening on: http://0.0.0.0:8080
+2020-10-06 12:49:17,719 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 12:49:17,719 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:49:17,719 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Hot replace total time: 0.718s 
+2020-10-06 12:49:42,833 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-9) File change detected: /workspace/rquarkus/src/main/resources/application.properties
+2020-10-06 12:49:42,835 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 12:49:42,837 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 12:49:42,838 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.004s
+2020-10-06 12:49:42,929 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-14) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 12:49:43,261 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (vert.x-eventloop-thread-1) HTTP Request to /openapi failed, error id: 5a5367e0-6cbb-4183-8996-0a9a3aac137a-2: java.lang.IllegalArgumentException
+	at io.quarkus.arc.impl.ArcContainerImpl.unwrap(ArcContainerImpl.java:696)
+	at io.quarkus.arc.impl.ArcContainerImpl.instance(ArcContainerImpl.java:718)
+	at io.quarkus.arc.impl.InstanceImpl.resolve(InstanceImpl.java:222)
+	at io.quarkus.arc.impl.InstanceImpl.<init>(InstanceImpl.java:77)
+	at io.quarkus.arc.impl.InstanceImpl.<init>(InstanceImpl.java:59)
+	at io.quarkus.arc.impl.InstanceProvider.get(InstanceProvider.java:39)
+	at io.quarkus.arc.impl.InstanceProvider.get(InstanceProvider.java:16)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_Bean.create(HttpAuthenticator_Bean.zig:373)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_Bean.create(HttpAuthenticator_Bean.zig:461)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:96)
+	at io.quarkus.arc.impl.AbstractSharedContext.access$000(AbstractSharedContext.java:14)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:29)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:26)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:26)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_ClientProxy.arc$delegate(HttpAuthenticator_ClientProxy.zig:92)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_ClientProxy.attemptAuthentication(HttpAuthenticator_ClientProxy.zig:182)
+	at io.quarkus.vertx.http.runtime.security.HttpSecurityRecorder$2.handle(HttpSecurityRecorder.java:97)
+	at io.quarkus.vertx.http.runtime.security.HttpSecurityRecorder$2.handle(HttpSecurityRecorder.java:49)
+	at io.vertx.ext.web.impl.RouteState.handleContext(RouteState.java:1034)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:131)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:133)
+	at io.quarkus.vertx.http.runtime.devmode.VertxHttpHotReplacementSetup.handleHotReplacementRequest(VertxHttpHotReplacementSetup.java:46)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$5.handle(VertxHttpRecorder.java:317)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$5.handle(VertxHttpRecorder.java:313)
+	at io.vertx.ext.web.impl.RouteState.handleContext(RouteState.java:1034)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:131)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:133)
+	at io.vertx.ext.web.impl.RouterImpl.handle(RouterImpl.java:54)
+	at io.vertx.ext.web.impl.RouterImpl.handle(RouterImpl.java:36)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$9.handle(VertxHttpRecorder.java:393)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$9.handle(VertxHttpRecorder.java:390)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$1.handle(VertxHttpRecorder.java:134)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$1.handle(VertxHttpRecorder.java:123)
+	at io.vertx.core.http.impl.WebSocketRequestHandler.handle(WebSocketRequestHandler.java:50)
+	at io.vertx.core.http.impl.WebSocketRequestHandler.handle(WebSocketRequestHandler.java:32)
+	at io.vertx.core.http.impl.Http1xServerConnection.handleMessage(Http1xServerConnection.java:136)
+	at io.vertx.core.impl.ContextImpl.executeTask(ContextImpl.java:366)
+	at io.vertx.core.impl.EventLoopContext.execute(EventLoopContext.java:43)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:229)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:173)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.channelRead(WebSocketServerExtensionHandler.java:101)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.vertx.core.http.impl.Http1xUpgradeToH2CHandler.channelRead(Http1xUpgradeToH2CHandler.java:109)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.vertx.core.http.impl.Http1xOrH2CHandler.end(Http1xOrH2CHandler.java:61)
+	at io.vertx.core.http.impl.Http1xOrH2CHandler.channelRead(Http1xOrH2CHandler.java:38)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-10-06 12:49:43,303 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-15) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingService#greetingConfig
+2020-10-06 12:49:43,524 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:43,524 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:43,524 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:43,524 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:43,525 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:43,525 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:43,525 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:49:43,576 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 12:49:43,577 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:49:43,577 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:49:43,577 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 12:49:43,579 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 12:49:43,579 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 12:49:43,580 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 12:49:43,581 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.739s. Listening on: http://0.0.0.0:8080
+2020-10-06 12:49:43,582 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 12:49:43,582 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:49:43,582 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-9) Hot replace total time: 0.752s 
+2020-10-06 12:53:20,715 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-10) File change detected: /workspace/rquarkus/src/main/resources/application.properties
+2020-10-06 12:53:20,718 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 12:53:20,718 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 12:53:20,720 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.004s
+2020-10-06 12:53:20,822 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-16) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 12:53:21,137 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-15) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService
+2020-10-06 12:53:21,376 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:53:21,376 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:53:21,376 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:53:21,376 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:53:21,376 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:53:21,376 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-06 12:53:21,376 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:53:21,393 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye.openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or you did not make a typo
+2020-10-06 12:53:21,426 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 12:53:21,427 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:53:21,427 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:53:21,428 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 12:53:21,429 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 12:53:21,429 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 12:53:21,430 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 12:53:21,431 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.705s. Listening on: http://0.0.0.0:8080
+2020-10-06 12:53:21,432 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 12:53:21,432 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:53:21,432 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-10) Hot replace total time: 0.722s 
+2020-10-06 12:57:25,283 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-12) Changed source files detected, recompiling [/workspace/rquarkus/src/main/java/org/QuarkusApplication.java]
+2020-10-06 12:57:25,415 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-12) File change detected: /workspace/rquarkus/src/main/resources/META-INF/openapi.yml
+2020-10-06 12:57:25,417 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 12:57:25,419 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 12:57:25,421 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.005s
+2020-10-06 12:57:25,517 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-10) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 12:57:25,866 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-16) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService
+2020-10-06 12:57:26,062 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:57:26,062 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:57:26,062 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:57:26,062 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:57:26,062 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:57:26,062 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-06 12:57:26,062 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:57:26,084 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye.openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or you did not make a typo
+2020-10-06 12:57:26,114 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 12:57:26,115 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:57:26,116 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:57:26,116 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 12:57:26,117 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 12:57:26,118 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 12:57:26,118 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 12:57:26,119 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.693s. Listening on: http://0.0.0.0:8080
+2020-10-06 12:57:26,120 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 12:57:26,120 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:57:26,120 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-12) Hot replace total time: 0.839s 
+2020-10-06 12:58:54,392 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-16) File change detected: /workspace/rquarkus/src/main/resources/META-INF/openapi.yml
+2020-10-06 12:58:54,394 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-06 12:58:54,397 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-06 12:58:54,397 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.004s
+2020-10-06 12:58:54,531 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.agr.dep.AgroalProcessor] (build-2) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-06 12:58:54,771 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (vert.x-eventloop-thread-3) HTTP Request to /openapi failed, error id: 5a5367e0-6cbb-4183-8996-0a9a3aac137a-3: java.lang.IllegalArgumentException
+	at io.quarkus.arc.impl.ArcContainerImpl.unwrap(ArcContainerImpl.java:696)
+	at io.quarkus.arc.impl.ArcContainerImpl.instance(ArcContainerImpl.java:718)
+	at io.quarkus.arc.impl.InstanceImpl.resolve(InstanceImpl.java:222)
+	at io.quarkus.arc.impl.InstanceImpl.<init>(InstanceImpl.java:77)
+	at io.quarkus.arc.impl.InstanceImpl.<init>(InstanceImpl.java:59)
+	at io.quarkus.arc.impl.InstanceProvider.get(InstanceProvider.java:39)
+	at io.quarkus.arc.impl.InstanceProvider.get(InstanceProvider.java:16)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_Bean.create(HttpAuthenticator_Bean.zig:373)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_Bean.create(HttpAuthenticator_Bean.zig:461)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:96)
+	at io.quarkus.arc.impl.AbstractSharedContext.access$000(AbstractSharedContext.java:14)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:29)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:26)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:26)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_ClientProxy.arc$delegate(HttpAuthenticator_ClientProxy.zig:92)
+	at io.quarkus.vertx.http.runtime.security.HttpAuthenticator_ClientProxy.attemptAuthentication(HttpAuthenticator_ClientProxy.zig:182)
+	at io.quarkus.vertx.http.runtime.security.HttpSecurityRecorder$2.handle(HttpSecurityRecorder.java:97)
+	at io.quarkus.vertx.http.runtime.security.HttpSecurityRecorder$2.handle(HttpSecurityRecorder.java:49)
+	at io.vertx.ext.web.impl.RouteState.handleContext(RouteState.java:1034)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:131)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:133)
+	at io.quarkus.vertx.http.runtime.devmode.VertxHttpHotReplacementSetup.handleHotReplacementRequest(VertxHttpHotReplacementSetup.java:46)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$5.handle(VertxHttpRecorder.java:317)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$5.handle(VertxHttpRecorder.java:313)
+	at io.vertx.ext.web.impl.RouteState.handleContext(RouteState.java:1034)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:131)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:133)
+	at io.vertx.ext.web.impl.RouterImpl.handle(RouterImpl.java:54)
+	at io.vertx.ext.web.impl.RouterImpl.handle(RouterImpl.java:36)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$9.handle(VertxHttpRecorder.java:393)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$9.handle(VertxHttpRecorder.java:390)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$1.handle(VertxHttpRecorder.java:134)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$1.handle(VertxHttpRecorder.java:123)
+	at io.vertx.core.http.impl.WebSocketRequestHandler.handle(WebSocketRequestHandler.java:50)
+	at io.vertx.core.http.impl.WebSocketRequestHandler.handle(WebSocketRequestHandler.java:32)
+	at io.vertx.core.http.impl.Http1xServerConnection.handleMessage(Http1xServerConnection.java:136)
+	at io.vertx.core.impl.ContextImpl.executeTask(ContextImpl.java:366)
+	at io.vertx.core.impl.EventLoopContext.execute(EventLoopContext.java:43)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:229)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:173)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.channelRead(WebSocketServerExtensionHandler.java:101)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.vertx.core.http.impl.Http1xUpgradeToH2CHandler.channelRead(Http1xUpgradeToH2CHandler.java:109)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.vertx.core.http.impl.Http1xOrH2CHandler.end(Http1xOrH2CHandler.java:61)
+	at io.vertx.core.http.impl.Http1xOrH2CHandler.channelRead(Http1xOrH2CHandler.java:38)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-10-06 12:58:54,829 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.arc.pro.BeanProcessor] (build-51) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingService#greetingConfig
+2020-10-06 12:58:55,056 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:58:55,056 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:58:55,056 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:58:55,056 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-06 12:58:55,056 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:58:55,056 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-06 12:58:55,056 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-06 12:58:55,077 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye.openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or you did not make a typo
+2020-10-06 12:58:55,108 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-06 12:58:55,109 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:58:55,109 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-06 12:58:55,109 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-06 12:58:55,111 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-06 12:58:55,111 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-06 12:58:55,111 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-06 12:58:55,113 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.711s. Listening on: http://0.0.0.0:8080
+2020-10-06 12:58:55,113 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-06 12:58:55,113 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-06 12:58:55,114 ws-11cbf748-4f7b-4795-82bc-4c77df1d79c1 rquarkusweb-dev.jar[12865] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-16) Hot replace total time: 0.725s 
