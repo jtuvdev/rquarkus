@@ -3,7 +3,9 @@
     "microprofile.tools.validation.unknown.excluded": [
         "*/mp-rest/providers/*/priority",
         "mp.openapi.schema.*",
-        "country-api/mp-rest/scope"
+        "country-api/mp-rest/scope",
+        "mp.openapi.extensions.smallrye.operationIdStrategy",
+        "quarkus.http.origins"
     ]
 
 }
