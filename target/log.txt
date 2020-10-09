@@ -1680,3 +1680,489 @@ Caused by: java.lang.IllegalArgumentException: Unable to determine the proper ba
 2020-10-08 14:04:03,732 ws-3fab71cd-4686-4dc3-82b4-576e499d49a7 rquarkusweb-dev.jar[20324] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
 2020-10-08 14:04:03,732 ws-3fab71cd-4686-4dc3-82b4-576e499d49a7 rquarkusweb-dev.jar[20324] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
 2020-10-08 14:04:03,732 ws-3fab71cd-4686-4dc3-82b4-576e499d49a7 rquarkusweb-dev.jar[20324] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-4) Hot replace total time: 1.152s 
+2020-10-09 12:22:13,139 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [io.qua.agr.dep.AgroalProcessor] (build-19) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-09 12:22:14,609 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.arc.pro.BeanProcessor] (build-39) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService
+2020-10-09 12:22:16,021 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-09 12:22:16,025 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:22:16,026 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:22:16,027 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-09 12:22:16,032 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-09 12:22:16,033 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-09 12:22:16,035 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-09 12:22:16,138 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 3.836s. Listening on: http://0.0.0.0:8080
+2020-10-09 12:22:16,139 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-09 12:22:16,139 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-09 12:33:18,798 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Changed source files detected, recompiling [/workspace/rquarkus/src/main/java/org/data/BookRepository.java]
+2020-10-09 12:33:19,603 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-09 12:33:19,676 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-09 12:33:19,681 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.079s
+2020-10-09 12:33:19,795 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [io.qua.agr.dep.AgroalProcessor] (build-4) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-09 12:33:20,182 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.arc.pro.BeanProcessor] (build-3) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingResource#greetingService
+2020-10-09 12:33:20,451 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:33:20,451 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:33:20,451 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:33:20,451 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:33:20,451 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:33:20,451 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-09 12:33:20,451 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:33:20,530 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-09 12:33:20,532 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:33:20,532 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:33:20,533 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-09 12:33:20,534 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-09 12:33:20,534 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-09 12:33:20,535 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-09 12:33:20,537 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.849s. Listening on: http://0.0.0.0:8080
+2020-10-09 12:33:20,537 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-09 12:33:20,538 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-09 12:33:20,538 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Hot replace total time: 1.742s 
+2020-10-09 12:33:47,346 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:33:48,355 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-199) HTTP Request to /bookFaultTolerance/timeout failed, error id: 73d8ee63-d57e-40c2-8550-13da4eed30ca-1: org.jboss.resteasy.spi.UnhandledException: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Caused by: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at io.smallrye.faulttolerance.core.timeout.Timeout.timeoutException(Timeout.java:76)
+	at io.smallrye.faulttolerance.core.timeout.Timeout.apply(Timeout.java:62)
+	at io.smallrye.faulttolerance.core.GeneralMetricsRecorder.apply(GeneralMetricsRecorder.java:17)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.syncFlow(FaultToleranceInterceptor.java:206)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.interceptCommand(FaultToleranceInterceptor.java:159)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor_Bean.intercept(FaultToleranceInterceptor_Bean.zig:555)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at org.data.BookRepository_Subclass.getBookTimeOut(BookRepository_Subclass.zig:457)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	... 20 more
+
+2020-10-09 12:33:53,015 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:33:54,019 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-199) HTTP Request to /bookFaultTolerance/timeout failed, error id: 73d8ee63-d57e-40c2-8550-13da4eed30ca-2: org.jboss.resteasy.spi.UnhandledException: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Caused by: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at io.smallrye.faulttolerance.core.timeout.Timeout.timeoutException(Timeout.java:76)
+	at io.smallrye.faulttolerance.core.timeout.Timeout.apply(Timeout.java:62)
+	at io.smallrye.faulttolerance.core.GeneralMetricsRecorder.apply(GeneralMetricsRecorder.java:17)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.syncFlow(FaultToleranceInterceptor.java:206)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.interceptCommand(FaultToleranceInterceptor.java:159)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor_Bean.intercept(FaultToleranceInterceptor_Bean.zig:555)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at org.data.BookRepository_Subclass.getBookTimeOut(BookRepository_Subclass.zig:457)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	... 20 more
+
+2020-10-09 12:33:55,164 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:33:56,169 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-199) HTTP Request to /bookFaultTolerance/timeout failed, error id: 73d8ee63-d57e-40c2-8550-13da4eed30ca-3: org.jboss.resteasy.spi.UnhandledException: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Caused by: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at io.smallrye.faulttolerance.core.timeout.Timeout.timeoutException(Timeout.java:76)
+	at io.smallrye.faulttolerance.core.timeout.Timeout.apply(Timeout.java:62)
+	at io.smallrye.faulttolerance.core.GeneralMetricsRecorder.apply(GeneralMetricsRecorder.java:17)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.syncFlow(FaultToleranceInterceptor.java:206)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.interceptCommand(FaultToleranceInterceptor.java:159)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor_Bean.intercept(FaultToleranceInterceptor_Bean.zig:555)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at org.data.BookRepository_Subclass.getBookTimeOut(BookRepository_Subclass.zig:457)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	... 20 more
+
+2020-10-09 12:34:03,707 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:04,748 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:06,634 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:07,689 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:08,166 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:08,597 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:09,894 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:10,175 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:10,634 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:15,429 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:16,432 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-199) HTTP Request to /bookFaultTolerance/timeout failed, error id: 73d8ee63-d57e-40c2-8550-13da4eed30ca-4: org.jboss.resteasy.spi.UnhandledException: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Caused by: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at io.smallrye.faulttolerance.core.timeout.Timeout.timeoutException(Timeout.java:76)
+	at io.smallrye.faulttolerance.core.timeout.Timeout.apply(Timeout.java:62)
+	at io.smallrye.faulttolerance.core.GeneralMetricsRecorder.apply(GeneralMetricsRecorder.java:17)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.syncFlow(FaultToleranceInterceptor.java:206)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.interceptCommand(FaultToleranceInterceptor.java:159)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor_Bean.intercept(FaultToleranceInterceptor_Bean.zig:555)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at org.data.BookRepository_Subclass.getBookTimeOut(BookRepository_Subclass.zig:457)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	... 20 more
+
+2020-10-09 12:34:16,488 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:17,490 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-199) HTTP Request to /bookFaultTolerance/timeout failed, error id: 73d8ee63-d57e-40c2-8550-13da4eed30ca-5: org.jboss.resteasy.spi.UnhandledException: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Caused by: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at io.smallrye.faulttolerance.core.timeout.Timeout.timeoutException(Timeout.java:76)
+	at io.smallrye.faulttolerance.core.timeout.Timeout.apply(Timeout.java:62)
+	at io.smallrye.faulttolerance.core.GeneralMetricsRecorder.apply(GeneralMetricsRecorder.java:17)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.syncFlow(FaultToleranceInterceptor.java:206)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.interceptCommand(FaultToleranceInterceptor.java:159)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor_Bean.intercept(FaultToleranceInterceptor_Bean.zig:555)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at org.data.BookRepository_Subclass.getBookTimeOut(BookRepository_Subclass.zig:457)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	... 20 more
+
+2020-10-09 12:34:17,640 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:34:18,643 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-199) HTTP Request to /bookFaultTolerance/timeout failed, error id: 73d8ee63-d57e-40c2-8550-13da4eed30ca-6: org.jboss.resteasy.spi.UnhandledException: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Caused by: org.eclipse.microprofile.faulttolerance.exceptions.TimeoutException: Timeout[org.data.BookRepository#getBookTimeOut] timed out
+	at io.smallrye.faulttolerance.core.timeout.Timeout.timeoutException(Timeout.java:76)
+	at io.smallrye.faulttolerance.core.timeout.Timeout.apply(Timeout.java:62)
+	at io.smallrye.faulttolerance.core.GeneralMetricsRecorder.apply(GeneralMetricsRecorder.java:17)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.syncFlow(FaultToleranceInterceptor.java:206)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor.interceptCommand(FaultToleranceInterceptor.java:159)
+	at io.smallrye.faulttolerance.FaultToleranceInterceptor_Bean.intercept(FaultToleranceInterceptor_Bean.zig:555)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at org.data.BookRepository_Subclass.getBookTimeOut(BookRepository_Subclass.zig:457)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	... 20 more
+
+2020-10-09 12:44:57,128 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-19) Changed source files detected, recompiling [/workspace/rquarkus/src/main/java/org/data/BookRepository.java]
+2020-10-09 12:44:57,299 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-09 12:44:57,301 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-09 12:44:57,305 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.007s
+2020-10-09 12:44:57,409 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [io.qua.agr.dep.AgroalProcessor] (build-14) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-09 12:44:57,725 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.arc.pro.BeanProcessor] (build-23) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingResource#greetingService,
+	- @Inject field org.greeting.GreetingService#greetingConfig
+2020-10-09 12:44:57,969 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:44:57,969 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:44:57,969 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:44:57,969 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:44:57,969 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:44:57,969 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-09 12:44:57,969 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:44:58,025 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-09 12:44:58,026 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:44:58,027 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:44:58,027 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-09 12:44:58,029 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-09 12:44:58,029 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-09 12:44:58,030 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-09 12:44:58,030 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.720s. Listening on: http://0.0.0.0:8080
+2020-10-09 12:44:58,031 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-09 12:44:58,031 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-09 12:44:58,031 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-19) Hot replace total time: 0.904s 
+2020-10-09 12:45:09,092 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:09,095 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:45:09,719 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:09,720 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:45:10,514 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:10,514 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:45:11,354 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:11,355 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:45:51,505 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-8) Changed source files detected, recompiling [/workspace/rquarkus/src/main/java/org/data/BookRepository.java]
+2020-10-09 12:45:51,655 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-09 12:45:51,657 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-09 12:45:51,659 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.005s
+2020-10-09 12:45:51,758 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [io.qua.agr.dep.AgroalProcessor] (build-3) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-09 12:45:52,065 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.arc.pro.BeanProcessor] (build-18) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService
+2020-10-09 12:45:52,338 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:45:52,338 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:45:52,338 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:45:52,338 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:45:52,338 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:45:52,338 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-09 12:45:52,338 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:45:52,404 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-09 12:45:52,405 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:45:52,405 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:45:52,405 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-09 12:45:52,407 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-09 12:45:52,407 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-09 12:45:52,408 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-09 12:45:52,409 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.744s. Listening on: http://0.0.0.0:8080
+2020-10-09 12:45:52,409 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-09 12:45:52,409 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-09 12:45:52,410 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-8) Hot replace total time: 0.906s 
+2020-10-09 12:45:53,757 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:53,758 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:45:54,911 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:54,912 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:45:55,564 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:55,564 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:45:57,685 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:45:57,686 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:46:01,768 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:46:01,768 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:46:10,549 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:46:10,550 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:46:11,943 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:46:11,945 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:46:14,592 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:46:14,593 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:46:17,986 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:46:17,987 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:46:18,814 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:46:18,815 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:46:20,283 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Couldn't connect to database
+2020-10-09 12:46:20,284 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [org.dat.BookRepository] (executor-thread-199) Id is null
+2020-10-09 12:53:05,469 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-16) Changed source files detected, recompiling [/workspace/rquarkus/src/main/java/org/data/BookRepository.java]
+2020-10-09 12:53:05,617 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStop executed
+2020-10-09 12:53:05,619 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00207: Cancel subscriptions
+2020-10-09 12:53:05,620 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb stopped in 0.004s
+2020-10-09 12:53:05,707 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [io.qua.agr.dep.AgroalProcessor] (build-3) The Agroal dependency is present but no JDBC datasources have been defined.
+2020-10-09 12:53:05,998 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.arc.pro.BeanProcessor] (build-15) Found unrecommended usage of private members (use package-private instead) in application beans:
+	- @Inject field org.crypto.CryptoCurrencyResource#echoService,
+	- @Inject field org.greeting.GreetingService#greetingConfig,
+	- @Inject field org.greeting.GreetingResource#greetingService
+2020-10-09 12:53:06,233 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.ForbiddenExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:53:06,233 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jsonb.QuarkusJsonbContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:53:06,233 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:53:06,233 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver is already registered.  2nd registration is being ignored.
+2020-10-09 12:53:06,233 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.NotFoundExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:53:06,233 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.SecurityContextFilter is already registered.  2nd registration is being ignored.
+2020-10-09 12:53:06,233 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] WARN  [org.jbo.res.res.i18n] (Quarkus Main Thread) RESTEASY002155: Provider class io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper is already registered.  2nd registration is being ignored.
+2020-10-09 12:53:06,286 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00208: Deployment done... start processing
+2020-10-09 12:53:06,287 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00226: Found incoming connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:53:06,288 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00227: Found outgoing connectors: [smallrye-mqtt, smallrye-kafka, smallrye-amqp]
+2020-10-09 12:53:06,288 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00229: Channel manager initializing...
+2020-10-09 12:53:06,289 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00209: Initializing mediators
+2020-10-09 12:53:06,290 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.sma.rea.mes.provider] (Quarkus Main Thread) SRMSG00215: Connecting mediators
+2020-10-09 12:53:06,290 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [Lifecycle] (Quarkus Main Thread) onStart executed
+2020-10-09 12:53:06,291 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) rquarkusweb 1.0.0 on JVM (powered by Quarkus 1.8.1.Final) started in 0.667s. Listening on: http://0.0.0.0:8080
+2020-10-09 12:53:06,292 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2020-10-09 12:53:06,292 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-orm-rest-data-panache, hibernate-validator, jdbc-postgresql, mutiny, narayana-jta, reactive-pg-client, rest-client, rest-client-jsonb, resteasy, resteasy-jackson, resteasy-jsonb, resteasy-multipart, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, smallrye-reactive-messaging-kafka, smallrye-reactive-messaging-mqtt, swagger-ui, vertx, vertx-web]
+2020-10-09 12:53:06,292 ws-6cec3473-5629-4f38-a297-6f51433fe528 rquarkusweb-dev.jar[5523] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-16) Hot replace total time: 0.825s 
