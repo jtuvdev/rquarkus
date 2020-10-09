@@ -6,7 +6,6 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-vertx-http/1.8.1.Final/quarkus-vertx-http-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-security-runtime-spi/1.8.1.Final/quarkus-security-runtime-spi-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-development-mode-spi/1.8.1.Final/quarkus-development-mode-spi-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/security/quarkus-security/1.1.2.Final/quarkus-security-1.1.2.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-vertx-core/1.8.1.Final/quarkus-vertx-core-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/vertx/vertx-web/3.9.2/vertx-web-3.9.2.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/vertx/vertx-web-common/3.9.2/vertx-web-common-3.9.2.jar" enabled="true" runInBatchMode="false"/>
@@ -126,7 +125,6 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/io/smallrye/smallrye-jwt/2.3.0/smallrye-jwt-2.3.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/microprofile/jwt/microprofile-jwt-auth-api/1.1.1/microprofile-jwt-auth-api-1.1.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/bitbucket/b_c/jose4j/0.7.2/jose4j-0.7.2.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-vertx-web/1.8.1.Final/quarkus-vertx-web-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-security/1.8.1.Final/quarkus-security-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-jsonp/1.8.1.Final/quarkus-jsonp-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/jakarta/servlet/jakarta.servlet-api/4.0.3/jakarta.servlet-api-4.0.3.jar" enabled="true" runInBatchMode="false"/>
@@ -245,4 +243,6 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/james/apache-mime4j-dom/0.8.3/apache-mime4j-dom-0.8.3.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/james/apache-mime4j-core/0.8.3/apache-mime4j-core-0.8.3.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/james/apache-mime4j-storage/0.8.3/apache-mime4j-storage-0.8.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-vertx-web/1.8.1.Final/quarkus-vertx-web-1.8.1.Final.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/security/quarkus-security/1.1.2.Final/quarkus-security-1.1.2.Final.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>
